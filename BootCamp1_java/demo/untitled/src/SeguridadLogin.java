@@ -5,7 +5,7 @@ public class SeguridadLogin {
     public static void main(String[] args)
     {
         SeguridadLogin objSecurity = new SeguridadLogin();
-        System.out.println(objSecurity.validaPasswordSeguro("passv3 $wersss"));
+        System.out.println(objSecurity.validaPasswordSeguro("passv3$wersss"));
 
     }
 
