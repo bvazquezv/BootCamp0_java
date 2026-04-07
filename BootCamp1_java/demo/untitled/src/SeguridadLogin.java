@@ -1,11 +1,17 @@
 public class SeguridadLogin {
 
-
-
     public static void main(String[] args)
     {
         SeguridadLogin objSecurity = new SeguridadLogin();
-        System.out.println(objSecurity.validaPasswordSeguro("passv3$wersss"));
+        String password= "passv3wersss";
+        System.out.println(password);
+        System.out.println(objSecurity.validaPasswordSeguro(password)+"\n");
+        password="passv$3wersss";
+        System.out.println(password);
+        System.out.println(objSecurity.validaPasswordSeguro(password)+"\n");
+        password="passv$3  wersss";
+        System.out.println(password);
+        System.out.println(objSecurity.validaPasswordSeguro(password)+"\n");
 
     }
 
@@ -54,7 +60,7 @@ public class SeguridadLogin {
         {haveSpecialChars=true;
         }else {
 
-            System.out.println("No caracteres especiales !@#$%^&*");
+            System.out.println("No contine caracteres especiales !@#$%^&*");
         }
         return haveSpecialChars;
     }
@@ -66,9 +72,7 @@ public class SeguridadLogin {
        if ( password.matches(".*[\\s].*"))
        {
            withespace=true;
-       }else {
-           System.out.println(" No Contiene espacios");
-
+           System.out.println("Contiene espacios");
        }
        return withespace;
     }

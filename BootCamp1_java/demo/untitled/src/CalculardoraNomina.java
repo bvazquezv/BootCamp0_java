@@ -1,18 +1,18 @@
 
-
 public class CalculardoraNomina {
 final double C_rateExtra = 1.5;
 final int  C_jornada_Horas=160;
 final double C_rateBonoSupervisor =0.2;
 final double ISR =0.15;
 
-
-
  public static void main  (String args[])
  {
      CalculardoraNomina calculadoraNom = new CalculardoraNomina();
-     calculadoraNom.calcularNomina(500,10,false);
+     double salarioNeto=0.0;
+     salarioNeto=calculadoraNom.calcularNomina(500,10,false);
+     System.out.println("valor devuelto (SalarioNeto)=>"+salarioNeto);
  }
+
 
     public  double calcularNomina(double salarioBase, int horasExtra, boolean esSupervisor)
     {
@@ -45,13 +45,13 @@ final double ISR =0.15;
         isrRetenido=calculaISRRetenido(salarioBruto);
         salarioNeto = salarioBruto - isrRetenido;
         System.out.println(
-                         "Horas Extra=>" + horasExtra + '\n' +
-                         "Salario Base=>" + salarioBase + '\n' +
-                         "Costo Extra=>" + costoHorasExtra + '\n' +
-                         "bonoSupervisor=>" + bonoSupervisor + '\n' +
-                         "SalarioBruto=>"+salarioBruto  + '\n' +
-                         "isrRetenido=>" +isrRetenido  + '\n' +
-                         "SalarioNeto=>"+salarioNeto
+                         "Horas_Extra=>" + horasExtra + '\n' +
+                         "Salario_Base=>" + salarioBase + '\n' +
+                         "Costo_Extra=>" + costoHorasExtra + '\n' +
+                         "Bono_Supervisor=>" + bonoSupervisor + '\n' +
+                         "Salario_Bruto=>"+salarioBruto  + '\n' +
+                         "ISR_Retenido=>" +isrRetenido  + '\n' +
+                         "Salario_Neto=>"+salarioNeto
 
         );
 

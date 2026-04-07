@@ -12,36 +12,34 @@ public class Producto {
     }
 
     // Constructor con todos los campos obligatorios
-    public Producto(long id, String nombre, double precio, int stock) {
+    public Producto(long id, String nombre, double precio, int stock, boolean activo) {
         this(); // Llama al constructor por defecto primero
         this.id= id;
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
+        this.activo =activo;
     }
 
     public static void main(String[] args) {
 
-        Producto objProducto1= new Producto(1,"Producto1",20.23,10);
+        Producto objProducto1= new Producto(1,"Producto1",20.23,10,true);
+        Producto objProducto2= new Producto(2,"Producto2",20.23,10,true);
+        Producto objProducto3= new Producto(3,"Producto3",20.23,10,true);
+
+// Llamado a todos lo mentodos Ejemplo para producto 1
+        System.out.println("valores actuales=>"+objProducto1.toString());
+             objProducto1.tieneStock();
+            System.out.println("Puede Vender 5 : ");
+            System.out.println( objProducto1.puedeVender(5));
+
+             System.out.println("Reduce el Stock 5");
+             objProducto1.reducirStock(5);
+             System.out.println("stock actulizado==>"+ objProducto1.stock);
 
 
-        objProducto1.tieneStock();  // Ejemplo para producto 1
-        if (objProducto1.puedeVender(5))
-        {    System.out.println("Puede vender reduce stock" );
-             System.out.println("stock Actual"+ objProducto1.stock);
-            objProducto1.reducirStock(5);
-            System.out.println("stock actulizado"+ objProducto1.stock);
-        }
-        else
-        {
-            System.out.println("No Puede vender stock insuficeinte" );
-            objProducto1.reducirStock(5); //lanza exepcion
-
-        }
         System.out.println(
         objProducto1.toString());
-
-
 
     }
 
@@ -68,6 +66,17 @@ public class Producto {
 
         this.stock -= cantidad;
     }
+
+
+    public void agregarStock(int cantidad) {
+        if (cantidad <= 0) {
+            throw new IllegalArgumentException("La cantidad debe ser positiva");
+        }
+
+
+        this.stock += cantidad;
+    }
+
 
 
     public Long getId() {
