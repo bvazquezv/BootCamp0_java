@@ -20,7 +20,7 @@ public static void main(String[] args) {
     System.out.println(x == y);  //true
     //java crea un cache de objetos integer de -128 a 127
     System.out.println(p == q);
-    //Aqui no hay cahce de bjetos por lo que se gnera un objeto di
+    //Aquí no hay cache de objetos por lo que se gnera un objeto diferente
     //
 }
 
