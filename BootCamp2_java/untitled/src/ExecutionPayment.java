@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public class ExecutionPayment {
 
+
     public static void main(String[] args) {
 
         Payment pago1= new CreditCardPayment(new BigDecimal("200.00"),"Pesos","abc13213213213","Bernardo",5);

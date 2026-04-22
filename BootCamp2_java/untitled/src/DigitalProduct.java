@@ -22,6 +22,7 @@ public class DigitalProduct extends Product {
     }
 
 
+
     @Override
     public boolean puedeVender(int cantidad) {
         return activo; // No depende del stock

@@ -27,6 +27,7 @@ public class CreditCardPayment extends Payment {
 
         this.estado = PaymentStatus.PROCESSING;
 
+
         try {
 
             //StripeResponse response = StripeGateway.charge(tokenTarjeta, monto, moneda);

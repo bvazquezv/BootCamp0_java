@@ -10,6 +10,7 @@ public abstract class Payment {
     protected LocalDateTime fechaCreacion;
     protected PaymentStatus estado;
 
+
     protected Payment(BigDecimal monto, String moneda) {
         validateMonto(monto);
         this.monto = monto;

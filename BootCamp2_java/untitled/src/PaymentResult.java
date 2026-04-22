@@ -21,6 +21,7 @@ public class PaymentResult {
 
     public static PaymentResult failure(String errorMessage) {
         return new PaymentResult(false, null, errorMessage);
+
     }
 
         public static PaymentResult pending(String transactionId) {

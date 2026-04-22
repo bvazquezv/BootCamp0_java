@@ -16,6 +16,8 @@ public class BankTransferPayment extends Payment {
         this.cuentaOrigen = cuentaOrigen;
         this.cuentaDestino = cuentaDestino;
         this.referencia = "TRF" + System.currentTimeMillis();
+
+
     }
 
     @Override
