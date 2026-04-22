@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class InventoryItem {
+public abstract class InventoryItem {
 
 
     protected Long id;
