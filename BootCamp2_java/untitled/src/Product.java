@@ -23,6 +23,20 @@ public class Product extends InventoryItem {
         this.sku = generarSKU(categoria, nombre);
     }
 
+
+    public Product(
+           CreateProductDTO dto
+    ) {
+        // OBLIGATORIO: primero llamar al padre
+        super(dto.getNombre(), dto.getDescripcion());
+        setPrecio(dto.getPrecio());
+        setStock(dto.getStock());
+        //Categoria
+        //sku
+    }
+
+
+
     // Comportamiento específico de Product
     public boolean puedeVender(int cantidad) {
         return activo && this.stock >= cantidad;

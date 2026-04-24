@@ -24,11 +24,9 @@ public abstract class Payment {
     public String getPaymentId() {
         return paymentId;
     }
-
     public BigDecimal getMonto() {
         return monto;
     }
-
     public PaymentStatus getEstado() {
         return estado;
     }

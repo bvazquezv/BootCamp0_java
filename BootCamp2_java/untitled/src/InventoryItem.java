@@ -5,6 +5,15 @@ public abstract class InventoryItem {
 
     protected Long id;
     protected String nombre;
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     protected String descripcion;
     protected boolean activo;
     protected LocalDateTime fechaCreacion;
