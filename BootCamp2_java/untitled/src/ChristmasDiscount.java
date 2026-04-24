@@ -6,5 +6,6 @@ public class ChristmasDiscount implements DiscountStrategy{
 
         System.out.println("descuento navidad");
         return null;
+
     }
 }

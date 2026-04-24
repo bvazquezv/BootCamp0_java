@@ -8,6 +8,7 @@ public class EjecuteDiscont {
         PriceCalculator calculator = new PriceCalculator(objDiscont);
         //  PriceCalculator  acepta cualquier estrategia de descuento
 
+
         Product p = new Product("Laptop", "computadira personal", new BigDecimal(10), 10, "Electronica");
         calculator.discont.calcular(new BigDecimal(10));
     }

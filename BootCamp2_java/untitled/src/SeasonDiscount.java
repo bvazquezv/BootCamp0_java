@@ -6,6 +6,7 @@ public class SeasonDiscount implements  DiscountStrategy{
 
         System.out.println("Descuento por temporada ");
 
+
         return null;
     }
 }

@@ -48,6 +48,7 @@ public abstract class Payment {
     public abstract String obtenerResumenParaUsuario();
 
 
+
     protected void onCancelacion() {
 
     }

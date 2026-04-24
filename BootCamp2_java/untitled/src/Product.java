@@ -64,6 +64,7 @@ public class Product extends InventoryItem {
                 + ", stock=" + stock
                 + '}';
     }
+    
 
     // Getters y setters con validación
     public BigDecimal getPrecio() {

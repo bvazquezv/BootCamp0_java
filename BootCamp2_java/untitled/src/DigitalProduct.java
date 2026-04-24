@@ -2,6 +2,7 @@ import java.math.BigDecimal;
 
 public class DigitalProduct extends Product {
 
+
     private String urlDescarga;
     private String licencia; // "SINGLE", "MULTI", "ENTERPRISE"
     private int maxDescargas;

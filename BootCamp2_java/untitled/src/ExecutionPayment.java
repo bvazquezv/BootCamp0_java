@@ -9,6 +9,8 @@ public class ExecutionPayment {
 
 
 
+
+
         Payment pago1= new CreditCardPayment(new BigDecimal("200.00"),"Pesos","abc13213213213","Bernardo",5);
         Payment pago2= new BankTransferPayment(new BigDecimal("200.00"),"Pesos","123","234");
         Payment pago3= new CreditCardPayment(new BigDecimal("200.00"),"Pesos","abc213213213","Bernardo",5);

@@ -5,6 +5,7 @@ public class FixedPercentageDiscount implements DiscountStrategy{
     public BigDecimal calcular(BigDecimal precioBase) {
         System.out.println("Porcentaje de descuento");
 
+
         return null;
     }
 }

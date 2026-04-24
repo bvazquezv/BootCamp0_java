@@ -6,6 +6,7 @@ public class ElectronicProduct extends Product {
     private int mesesGarantia;
     private String voltaje; // "110V", "220V", "Dual"
 
+
     public ElectronicProduct(
             String nombre,
             String descripcion,

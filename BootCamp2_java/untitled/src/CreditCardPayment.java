@@ -2,6 +2,7 @@ import java.math.BigDecimal;
 
 public class CreditCardPayment extends Payment {
 
+
     private String ultimosCuatroDigitos;
     private String titular;
     private int numeroCuotas;

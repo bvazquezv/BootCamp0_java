@@ -35,6 +35,7 @@ public abstract class InventoryItem {
         return activo;
     }
 
+
     public String getNombre() {
         return nombre;
     }

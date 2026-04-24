@@ -6,6 +6,7 @@ public interface Discountable {
     BigDecimal calcularPrecioConDescuento(BigDecimal porcentaje);
 
 
+
     boolean esElegibleParaDescuento(String tipoDescuento);
 
     default BigDecimal calcularDescuentoMaximo() {
