@@ -5,6 +5,11 @@ public class Product extends InventoryItem {
     // Campos propios de Product (además de los heredados)
     private BigDecimal precio;
     private int stock;
+
+    public String getCategoria() {
+        return categoria;
+    }
+
     private String categoria;
     private String sku; // Stock Keeping Unit
 
@@ -64,7 +69,7 @@ public class Product extends InventoryItem {
                 + ", stock=" + stock
                 + '}';
     }
-    
+
 
     // Getters y setters con validación
     public BigDecimal getPrecio() {
