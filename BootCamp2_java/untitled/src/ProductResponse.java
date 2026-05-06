@@ -1,3 +1,5 @@
+import Strategy.Product;
+
 import java.math.BigDecimal;
 
 public record ProductResponse(

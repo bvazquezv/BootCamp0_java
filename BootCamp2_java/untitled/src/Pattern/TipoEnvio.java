@@ -1,0 +1,7 @@
+package Pattern;
+
+public enum TipoEnvio {
+
+    SAMEDAY_SHIPPING,STANDAR_SHIPPING,EXPRESS_SHIPPING,INTERNATIONAL_SHIPPING
+
+}

@@ -1,3 +1,6 @@
+import Strategy.CreateProductDTO;
+import Strategy.Product;
+
 public class ProductService  {
     private final ProductRepository repository;
     public ProductService(ProductRepository repository) {
@@ -9,8 +12,11 @@ public class ProductService  {
             {
 
         throw new Exception(dto.getNombre());
-            }
-    return repository.save(new Product(dto));
+            }else
+    {
+        return repository.save(new Product(dto));
+    }
+
     }
 //Pendiente
  }

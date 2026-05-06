@@ -1,3 +1,5 @@
+import Strategy.Product;
+
 import java.math.BigDecimal;
 
 public class DigitalProduct extends Product {
@@ -13,7 +15,7 @@ public class DigitalProduct extends Product {
             BigDecimal precio,
             String licencia
     ) {
-        // Hereda de Product — stock es siempre ilimitado para digitales
+        // Hereda de Strategy.Product — stock es siempre ilimitado para digitales
         super(nombre, descripcion, precio, Integer.MAX_VALUE, "Digital");
 
         this.licencia = licencia;

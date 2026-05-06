@@ -1,3 +1,5 @@
+import Strategy.Product;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
@@ -23,11 +25,12 @@ public class InMemoryProductRepository implements ProductRepository{
     @Override
     public boolean existsByNombre(String nombre) {
         System.out.println("Valido Existencia del producto, se simula que ya hay uno en base datos");
-        Product p  = new Product("F","Fondo Inversion",new BigDecimal(20),5,"Electronica");
-
-        if (nombre.equals(p.nombre))
+        Product p  = new Product("FFF","Fondo Inversion",new BigDecimal(20),5,"Electronica");
+       // ProductResponse pr = new
+        if (nombre.equals(p.getNombre()))
         {
             System.out.println("El producto ya existe");
+            return true;
         }
 
         return false;
