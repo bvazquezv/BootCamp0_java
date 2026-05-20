@@ -49,7 +49,7 @@ public record Money(BigDecimal amount, String currency) {
         return new Money(new BigDecimal(amount), currency);
     }
 
-    public static Money zero(String currency) {
+    public Money zero() {
         return new Money(BigDecimal.ZERO, currency);
     }
 
