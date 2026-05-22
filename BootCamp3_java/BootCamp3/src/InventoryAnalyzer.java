@@ -23,10 +23,9 @@ public class InventoryAnalyzer {
         listOfproductStats.add(pcuatro);
         listOfproductStats.add(pcinco);
 
+        System.out.println("Ejericio 1");
         InventoryAnalyzer inventoryAnalyzer = new InventoryAnalyzer(listOfproductStats);
         List<ProductStats> listTop= inventoryAnalyzer.top10MasVendidos();
-
-
 
         for(ProductStats objTop :listTop)
         {
@@ -34,7 +33,7 @@ public class InventoryAnalyzer {
             objTop.ventas())
             ;
         }
-
+        System.out.println("Ejericio 2");
         Map<String, List<ProductStats>>  stockCriticoPorCategoria = inventoryAnalyzer.stockCriticoPorCategoria();
         for (Map.Entry<String, List<ProductStats>> entry : stockCriticoPorCategoria.entrySet()) {
             String categoria = entry.getKey();
@@ -45,9 +44,8 @@ public class InventoryAnalyzer {
             }
         }
 
-
+        System.out.println("Ejericio 3");
         List<CategoryReport> categoryReports = inventoryAnalyzer.reportePorCategoria();
-
         for (CategoryReport repproducto : categoryReports) {
             System.out.println("   categoria : " + repproducto.categoria());
             System.out.println("   reporte Producto: " + repproducto.totalProductos());
@@ -65,7 +63,7 @@ public class InventoryAnalyzer {
     // 1. Top 10 productos más vendidos
     public List<ProductStats> top10MasVendidos() {
         List<ProductStats> to10 = catalogo.stream()
-                .sorted(Comparator.comparing(ProductStats::ventas).reversed())
+                    .sorted(Comparator.comparing(ProductStats::ventas).reversed())
                 .limit(4)
                 .collect(Collectors.toList());
         return to10;
