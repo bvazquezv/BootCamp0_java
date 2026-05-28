@@ -4,27 +4,23 @@ import java.util.Map;
 public class CacheHashMap {
 
     public static void main(String[] args) {
-
-
+        
         Producto p1=  new Producto(1L,"sk1","nombre1");
-        Producto p2=        new Producto(2L,"sk2","nombre2");
+        Producto p2=          new Producto(2L,"sk2","nombre2");
         Producto p3=          new Producto(3L,"sk3","nombre3");
-        Producto p4=         new Producto(4L,"sk4","nombre4");
-        Producto p5=         new Producto(5L,"sk5","nombre5");
-        Producto p6=  new Producto(6L,"sk6","nombre6");
-        Producto p7=        new Producto(7L,"sk7","nombre7");
+        Producto p4=          new Producto(4L,"sk4","nombre4");
+        Producto p5=          new Producto(5L,"sk5","nombre5");
+        Producto p6=          new Producto(6L,"sk6","nombre6");
+        Producto p7=          new Producto(7L,"sk7","nombre7");
         Producto p8=          new Producto(8L,"sk8","nombre8");
-        Producto p9=         new Producto(9L,"sk9","nombre9");
+        Producto p9=          new Producto(9L,"sk9","nombre9");
         Producto p10=         new Producto(10L,"sk10","nombre10");
         Producto p11=         new Producto(11L,"sk11","nombre11");
         Producto p12=         new Producto(12L,"sk12","nombre12");
         Producto p13=         new Producto(13L,"sk13","nombre13");
 
-
-
         Map<String, Producto> cache = new LinkedHashMap<>(5, 0.75f, true) {
             private static final int MAX_SIZE = 10;
-
             @Override
             protected boolean removeEldestEntry(Map.Entry<String, Producto> eldest) {
                 return size() > MAX_SIZE; // Elimina el más antiguo cuando llega al límite } };
@@ -61,14 +57,7 @@ public class CacheHashMap {
             );
         }
 
-
-
-
     }
-
-
-
-
 
 }
 

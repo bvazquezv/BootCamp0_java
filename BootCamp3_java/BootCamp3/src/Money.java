@@ -62,6 +62,7 @@ public record Money(BigDecimal amount, String currency) {
         return String.format("%,.2f %s", amount, currency);
     }
 
+
     private void requireSameCurrency(Money other) {
         if (!currency.equals(other.currency)) {
             throw new IllegalArgumentException(
